@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dip"
+        android:text="Student Schedule Planner"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Overview"
+        android:textColor="#FFA62F"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:lines="6"
+        android:maxLines="6"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:text="StudentSchedulePlanner is a mobile application that aims to facilitate the students experience by keeping track of their schedule, class assignments/examination and their daily activities. Its allows the user to create events – events can vary from a quiz/test to a home assignment or daily activity." />
+
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scope"
+        android:textColor="#FFA62F"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:lines="10"
+        android:maxLines="10"
+        android:paddingBottom="15dip"
+        android:paddingLeft="10dip"
+        android:text="The scope of this project is to store user-generated information about events of different categories (daily activities/exams/assignments), time, location, some short description, and making it available to the user of the application. It also attempts to provide simple information about classes and help the student keep track of his semester classes and the upcoming ones need for his/her graduation." />
+
+</LinearLayout>

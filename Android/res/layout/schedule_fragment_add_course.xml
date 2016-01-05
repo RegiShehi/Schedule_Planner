@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp" >
+
+        <EditText
+            android:id="@+id/etxt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:ems="7"
+            android:hint="@string/name"
+            android:nextFocusDown="@+id/etxt_room"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/etxt_name"
+            android:text="             *Required field"
+            android:textColor="#DF0101"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/etxt_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/etxt_name"
+            android:ems="7"
+            android:hint="@string/room"
+            android:nextFocusDown="@+id/etxt_name"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etxt_name"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/etxt_room"
+            android:text="             *Required field"
+            android:textColor="#DF0101"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/etxt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/etxt_room"
+            android:ems="7"
+            android:hint="@string/time"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etxt_room"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/etxt_time"
+            android:text="             *Required field"
+            android:textColor="#DF0101"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/spinner_dept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etxt_time" />
+
+        <LinearLayout
+            android:id="@+id/layout_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_dept"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@+id/button_add"
+                style="@style/Button"
+                android:layout_weight="1"
+                android:text="@string/add" />
+
+            <Button
+                android:id="@+id/button_reset"
+                style="@style/Button"
+                android:layout_weight="1"
+                android:text="@string/reset" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

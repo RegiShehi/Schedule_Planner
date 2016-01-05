@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <!-- Course Title -->
+
+    <TextView
+        android:id="@+id/course_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dip"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Code"
+        android:textColor="#FFA62F"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Course Code -->
+
+    <TextView
+        android:id="@+id/course_code"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dip"
+        android:paddingLeft="10dip"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Department"
+        android:textColor="#FFA62F"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Department Name -->
+
+    <TextView
+        android:id="@+id/department_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dip"
+        android:paddingLeft="10dip"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Credits"
+        android:textColor="#FFA62F"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Course Credits -->
+
+    <TextView
+        android:id="@+id/credits"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dip"
+        android:paddingLeft="10dip"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textColor="#FFA62F"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Course Description -->
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+</LinearLayout>

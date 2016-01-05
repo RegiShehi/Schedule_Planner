@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- Department id / Hidden by default -->
+    <TextView
+        android:id="@+id/department_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <!-- Course id / Hidden by default -->
+    <TextView
+        android:id="@+id/course_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+    <!-- Course credits / Hidden by default -->
+    <TextView
+        android:id="@+id/course_credits"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+    <!-- Course description / Hidden by default -->
+    <TextView
+        android:id="@+id/course_description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+    <!-- Subject serial no -->
+    <TextView
+        android:id="@+id/subject_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dip"
+        android:paddingLeft="5dip"
+        android:paddingTop="15dip"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_alignParentLeft="true"/>
+
+    <!-- Course Name -->
+    <TextView
+        android:id="@+id/department_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dip"
+        android:paddingLeft="5dip"
+        android:paddingTop="15dip"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/subject_no"/>
+
+    <!-- Course code -->
+    <TextView
+        android:id="@+id/course_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="3dip"
+        android:paddingRight="6dip"
+        android:textColor="#FFA62F" />
+
+</RelativeLayout>

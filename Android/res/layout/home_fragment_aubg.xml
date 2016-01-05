@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dip"
+        android:text="AUBG"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Info"
+        android:textColor="#FFA62F"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:lines="6"
+        android:maxLines="6"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:text="The first American-style, English language, liberal arts educational institution in Eastern Europe, the American University in Bulgaria (AUBG) is a unique cooperative venture established with the support of the U.S. and Bulgarian governments, the Open Society Institute, and the University of Maine." />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:lines="6"
+        android:maxLines="6"
+        android:paddingBottom="15dip"
+        android:paddingLeft="10dip"
+        android:text="AUBG is a privately funded, not-for-profit institution. Tuition and private donations, as well as grants, finance its educational activities. It opened its doors in September 1991, with a first-year class of 208 students and 16 full-time faculty members." />
+
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mission"
+        android:textColor="#FFA62F"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:lines="6"
+        android:maxLines="6"
+        android:paddingBottom="15dip"
+        android:paddingLeft="10dip"
+        android:text="The mission of the American University in Bulgaria is to educate students of outstanding potential in a community of academic excellence, diversity, and respect and to prepare them for democratic and ethical leadership in serving the needs of the region and the world. " />
+
+</LinearLayout>

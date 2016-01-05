@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+ 
+    <!-- Department id / Hidden by default -->
+    <TextView
+        android:id="@+id/department_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    
+    <!-- Department Name -->
+    <TextView
+        android:id="@+id/department_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:paddingTop="15dip"
+        android:paddingBottom="15dip"
+        android:paddingLeft="10dip"
+        android:textStyle="bold"/>
+ 
+    <!-- Department Courses count -->
+    <TextView android:id="@+id/courses_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:background="#FFA62F"
+        android:paddingRight="3dip"
+        android:paddingLeft="3dip"/>    
+ 
+</RelativeLayout>

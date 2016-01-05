@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.INFSeniorProject.navigationdrawer"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <!-- Permission - Internet Connect -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Network State Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Using Camera -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="keyboardHidden|orientation"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.INFSeniorProject.navigationdrawer.HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.INFSeniorProject.multilevellistview.DepartmentsActivity"
+            android:parentActivityName="com.INFSeniorProject.navigationdrawer.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.INFSeniorProject.multilevellistview.SubjectListActivity"
+            android:parentActivityName="com.INFSeniorProject.multilevellistview.DepartmentsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.INFSeniorProject.multilevellistview.SingleSubjectActivity" />
+        <activity
+            android:name="com.INFSeniorProject.courseplanner.MainScreenActivity"
+            android:parentActivityName="com.INFSeniorProject.navigationdrawer.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.INFSeniorProject.courseplanner.AllCoursesActivity"
+            android:label="All Products"
+            android:parentActivityName="com.INFSeniorProject.courseplanner.MainScreenActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.INFSeniorProject.courseplanner.NewCourseActivity"
+            android:label="Add New Product"
+            android:parentActivityName="com.INFSeniorProject.courseplanner.MainScreenActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.INFSeniorProject.courseplanner.EditCourseActivity"
+            android:label="Edit Product"
+            android:parentActivityName="com.INFSeniorProject.courseplanner.AllCoursesActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.INFSeniorProject.schedule.MainActivity"
+            android:label="Main Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.INFSeniorProject.eventtracker.EventPagerActivity"
+            android:label="Event Activity"
+            android:parentActivityName="com.INFSeniorProject.eventtracker.EventListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.INFSeniorProject.eventtracker.EventListActivity"
+            android:label="List Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.INFSeniorProject.eventtracker.EventCameraActivity"
+            android:exported="true"
+            android:label="Camera Activity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.INFSeniorProject.login.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.INFSeniorProject.login.SignUpActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.INFSeniorProject.login.DispatchActivity"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.INFSeniorProject.login.SignUpOrLogInActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.INFSeniorProject.home.HomeScreenActivity"
+            android:parentActivityName="com.INFSeniorProject.navigationdrawer.HomeActivity" />
+    </application>
+
+</manifest>
