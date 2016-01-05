@@ -1,1 +1,3 @@
 # Schedule_Planner
+
+Mobile Student Schedule Planner is a mobile application based on Android operating system and it aims to facilitate the students experience by keeping track of their schedule, class assignments/examination and their daily activities. Its basic functionality is to allow the user to create events – events can vary from a quiz/test to a home assignment or daily activity. The user can create an event by giving a name, short description, date and time to that event – furthermore the application will present the student with a course catalog and the student will have the opportunity to create his. 
